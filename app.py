@@ -8,6 +8,7 @@ def init():
     global model
     model_id = os.getenv("MODEL_ID")
     
+    
     device = 0 if torch.cuda.is_available() else -1
     model = pipeline('fill-mask', model=model_id, device=device)
 
