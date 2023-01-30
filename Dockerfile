@@ -12,7 +12,7 @@ ADD requirements.txt requirements.txt
 RUN pip3 install -r requirements.txt
 
 # Set model id as an ENV variable
-ENV MODEL_ID bert-base-uncased
+ENV MODEL_ID bert-base-chinese
 
 # We add the banana boilerplate here
 ADD server.py .
